@@ -6,13 +6,6 @@ import time
 st.write("Hello world")
 
 
-titanic = pd.read_csv("/Users/fsalg/Downloads/titanic.csv")
-
-
-titanic["Age2"] = titanic[titanic["Age"].notna()]["Age"]* 2
-
-st.write(titanic[titanic["Age2"].notna()]["Age2"].describe()) 
-
 chart_data = pd.DataFrame(
      np.random.randn(20, 3),
      columns=['a', 'b', 'c'])
